@@ -1,5 +1,5 @@
 # Scheme-Evaluator-Compiler
-This is a modified version of compiler and evaluator for Scheme based on the SICP book.
+This is a modified version of evaluator for Scheme based on the book STRUCTURE AND INTERPRETATION OF COMPUTER PROGRAMS (SICP)
 
 ##### Scheme
 Scheme is a minimalist, multi-paradigm dialect of Lisp. It's **simple and elegant**.
@@ -8,7 +8,7 @@ Scheme is a minimalist, multi-paradigm dialect of Lisp. It's **simple and elegan
 - There is a version provided by [GNU](http://www.gnu.org/software/mit-scheme/)
 - Or you can install [DrRacket](http://racket-lang.org/)
 
-### The Evaluator: mceval.scm 
+### The Evaluator
 This is a modifeid version of the Scheme interpreter written in Scheme which support lazy evaluation.
 
 ##### How to Run
