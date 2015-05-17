@@ -492,9 +492,9 @@
 ; check if the statment is the enw cons
 (define (new-cons? exp) (tagged-list? exp 'new-cons))
 ; setup the new cons by cons the delaying object
-(define (eval-new-cons exp env) (cons (delay-it (cadr exp) env) (delay-it (caddr exp) env)))
+(define (eval-new-cons exp env) (cons (cadr exp) (delay-it (caddr exp) env)))
 
-
+(driver-loop)
 
 
 
