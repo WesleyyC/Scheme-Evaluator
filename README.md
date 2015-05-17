@@ -1,4 +1,4 @@
-# Scheme-Evaluator-Compiler
+# Scheme-Evaluator
 This is a modified version of evaluator for Scheme based on the book STRUCTURE AND INTERPRETATION OF COMPUTER PROGRAMS (SICP)
 
 ##### Scheme
