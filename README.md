@@ -11,13 +11,13 @@ Scheme is a minimalist, multi-paradigm dialect of Lisp. It's **simple and elegan
 ### The Evaluator: mceval.scm 
 This is a modifeid version of the Scheme interpreter written in Scheme which support lazy evaluation.
 
-#### How to Run
+##### How to Run
 To run the evaluator:
 ```shell
 scheme -load mceval.scm
 ```
 
-#### The Lazy Evaluation
+##### The Lazy Evaluation
 In Scheme, if we define the following ``try``
 ```Scheme
 (define (try a b)
@@ -34,7 +34,7 @@ However, in my modified version, user can choose to delay some of the argument w
 ```
 and now if we run ``(try 0 (/ 1 0))`` again, the system will simply return ``1`` instead of throwing an error.
 
-#### A Different Version of Stream
+##### A Different Version of Stream
 In Scheme, there is a built in ``stream`` which is similar to ``cons`` but with a delayed second argument. Now with the new ``dealyed`` tag, we can build a ``new-cons`` which inherits the built in ``cons`` but add a ``delayed`` tag for the second argument.
 
 Usage: 
@@ -46,7 +46,7 @@ which will give us a function that can return a infinite list of integers starti
 
 This is a great example of how delayed argument can provide better computation efficiency.
 
-#### Other functionality
+##### Other functionality
 Besides the ``delayed`` tag, there are other improvement from the original meta-circular evaluator introduced in SICP.
 - ``let`` which is the same as the built in ``let``
 - ``let*`` which is the same as the built in ``let*``
